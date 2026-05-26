@@ -1,0 +1,90 @@
+/* BeefYield Capital — Design Tokens */
+:root {
+  /* Navy */
+  --navy-900: #06121F;
+  --navy-800: #071A2D;
+  --navy-700: #0B1F33;
+  --navy-600: #102A43;
+  --navy-500: #16324A;
+
+  /* Emerald (fintech green) */
+  --emerald-700: #00A878;
+  --emerald-600: #00C896;
+  --emerald-500: #00D084;
+
+  /* Cyan */
+  --cyan-700: #2F80ED;
+  --cyan-600: #00B8D9;
+  --cyan-500: #38BDF8;
+
+  /* Gold */
+  --gold-700: #D9A441;
+  --gold-600: #F5A524;
+  --gold-500: #FFB020;
+
+  /* Semantic */
+  --success: #00A878;
+  --info:    #2F80ED;
+  --ai:      #38BDF8;
+  --warning: #F5A524;
+  --danger:  #EF4444;
+  --violet:  #7C3AED;
+
+  /* Neutrals */
+  --bg:      #F7FAFC;
+  --bg-alt:  #F2F6F9;
+  --card:    #FFFFFF;
+  --line:    #E4ECF3;
+  --line-soft:#EEF3F8;
+  --text:    #0B1F33;
+  --text-2:  #51637A;
+  --text-3:  #8497AE;
+  --muted:   #64748B;
+
+  /* Dark */
+  --d-bg:    #06121F;
+  --d-card:  #0B1F33;
+  --d-card-2:#102A43;
+  --d-line:  #16324A;
+  --d-text:  #F8FAFC;
+  --d-text-2:#94A3B8;
+
+  /* Type */
+  --f-display: 'Manrope', 'Inter', system-ui, sans-serif;
+  --f-sans:    'Inter', system-ui, sans-serif;
+  --f-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* Radius */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+
+  /* Shadow */
+  --sh-card: 0 1px 2px rgba(11,31,51,0.04), 0 8px 24px rgba(11,31,51,0.06);
+  --sh-pop:  0 10px 30px rgba(11,31,51,0.12);
+
+  /* Gradients */
+  --grad-hero: linear-gradient(135deg, #071A2D 0%, #0B3D3A 48%, #00A878 100%);
+  --grad-emerald: linear-gradient(135deg, #00A878 0%, #00B8D9 100%);
+  --grad-gold: linear-gradient(135deg, #F5A524 0%, #FFB020 100%);
+  --grad-cyan: linear-gradient(135deg, #2F80ED 0%, #38BDF8 100%);
+}
+
+/* base reset for screen content */
+.byc-screen {
+  font-family: var(--f-sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.byc-screen.dark { background: var(--d-bg); color: var(--d-text); }
+
+.byc-screen *, .byc-screen *::before, .byc-screen *::after { box-sizing: border-box; }
+
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* utility */
+.byc-screen ::-webkit-scrollbar { width: 0; height: 0; }
